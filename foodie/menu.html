@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Menu — Foodie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="main-header">
+    <nav class="container">
+      <a href="index.html" class="logo">Foodie.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="btn-primary">Contact</a></li>
+      </ul>
+      <button class="mobile-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="menu">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Menu</h2>
+          <p>Handcrafted dishes made from fresh, local ingredients — explore our starters, mains, and desserts.</p>
+        </div>
+
+        <div class="menu-controls" style="text-align:center; margin-bottom:2rem;">
+          <div class="menu-filters" role="tablist" aria-label="Menu filters">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="filter-btn" data-filter="starters" role="tab" aria-selected="false">Starters</button>
+            <button class="filter-btn" data-filter="mains" role="tab" aria-selected="false">Mains</button>
+            <button class="filter-btn" data-filter="desserts" role="tab" aria-selected="false">Desserts</button>
+          </div>
+        </div>
+
+        <div class="menu-grid" aria-live="polite">
+          <article class="menu-item" data-category="starters">
+            <div class="menu-img-wrapper">
+              <img src="images/salad.svg" alt="Greens and fresh salad" />
+            </div>
+            <div class="menu-info">
+              <h3>Heritage Garden Salad <span class="price">$9</span></h3>
+              <p>Seasonal leaves, vinaigrette, toasted seeds and citrus dressing.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="mains">
+            <div class="menu-img-wrapper">
+              <img src="images/steak.png" alt="Seared steak on plate" />
+            </div>
+            <div class="menu-info">
+              <h3>Cast Iron Ribeye <span class="price">$28</span></h3>
+              <p>12oz ribeye, herb butter, roasted baby potatoes, seasonal veg.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="mains">
+            <div class="menu-img-wrapper">
+              <img src="images/pasta.svg" alt="Creamy pasta" />
+            </div>
+            <div class="menu-info">
+              <h3>Truffle Mushroom Pasta <span class="price">$18</span></h3>
+              <p>Hand-cut pasta, wild mushrooms, parmesan, truffle oil.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="desserts">
+            <div class="menu-img-wrapper">
+              <img src="images/dessert.svg" alt="Dessert plate" />
+            </div>
+            <div class="menu-info">
+              <h3>Honey Almond Panna Cotta <span class="price">$10</span></h3>
+              <p>Silky panna cotta, honey glaze, crushed almonds, seasonal compote.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="starters">
+            <div class="menu-img-wrapper">
+              <img src="images/salad.svg" alt="Light starter plate" />
+            </div>
+            <div class="menu-info">
+              <h3>Smoked Beet Carpaccio <span class="price">$11</span></h3>
+              <p>Thin-sliced beets, whipped goat cheese, candied walnuts, balsamic.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="desserts">
+            <div class="menu-img-wrapper">
+              <img src="images/dessert.svg" alt="Mini dessert" />
+            </div>
+            <div class="menu-info">
+              <h3>Chocolate Olive Oil Cake <span class="price">$9</span></h3>
+              <p>Moist chocolate cake with orange gelato and hazelnut crumble.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="starters">
+            <div class="menu-img-wrapper">
+              <img src="images/salad.svg" alt="Crispy samosas" />
+            </div>
+            <div class="menu-info">
+              <h3>Vegetable Samosa <span class="price">$8</span></h3>
+              <p>Golden triangular pastries filled with spiced potatoes, peas, and aromatic herbs.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="starters">
+            <div class="menu-img-wrapper">
+              <img src="images/salad.svg" alt="Paneer tikka skewers" />
+            </div>
+            <div class="menu-info">
+              <h3>Paneer Tikka <span class="price">$12</span></h3>
+              <p>Grilled cottage cheese marinated in yogurt and spices, served with mint chutney.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="starters">
+            <div class="menu-img-wrapper">
+              <img src="images/steak.png" alt="Chicken tikka" />
+            </div>
+            <div class="menu-info">
+              <h3>Chicken Tikka <span class="price">$13</span></h3>
+              <p>Tender chicken pieces marinated in tandoori spices, chargrilled to perfection.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="mains">
+            <div class="menu-img-wrapper">
+              <img src="images/steak.png" alt="Butter chicken curry" />
+            </div>
+            <div class="menu-info">
+              <h3>Butter Chicken <span class="price">$22</span></h3>
+              <p>Succulent chicken in creamy tomato sauce with butter, fenugreek, and aromatic spices.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="mains">
+            <div class="menu-img-wrapper">
+              <img src="images/pasta.svg" alt="Biryani rice dish" />
+            </div>
+            <div class="menu-info">
+              <h3>Hyderabadi Chicken Biryani <span class="price">$20</span></h3>
+              <p>Fragrant basmati rice layered with spiced chicken, saffron, and caramelized onions.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="mains">
+            <div class="menu-img-wrapper">
+              <img src="images/salad.svg" alt="Palak paneer curry" />
+            </div>
+            <div class="menu-info">
+              <h3>Palak Paneer <span class="price">$18</span></h3>
+              <p>Silky spinach curry with cottage cheese cubes, garlic, ginger, and cream.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="mains">
+            <div class="menu-img-wrapper">
+              <img src="images/pasta.svg" alt="Dal curry" />
+            </div>
+            <div class="menu-info">
+              <h3>Dal Makhani <span class="price">$16</span></h3>
+              <p>Slow-cooked black lentils in rich tomato cream sauce with butter and spices.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="desserts">
+            <div class="menu-img-wrapper">
+              <img src="images/dessert.svg" alt="Gulab jamun dessert" />
+            </div>
+            <div class="menu-info">
+              <h3>Gulab Jamun <span class="price">$8</span></h3>
+              <p>Soft milk-based dumplings soaked in rose-cardamom syrup, served warm.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="desserts">
+            <div class="menu-img-wrapper">
+              <img src="images/dessert.svg" alt="Kheer rice pudding" />
+            </div>
+            <div class="menu-info">
+              <h3>Saffron Kheer <span class="price">$9</span></h3>
+              <p>Creamy rice pudding infused with saffron, cardamom, and garnished with pistachios.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="desserts">
+            <div class="menu-img-wrapper">
+              <img src="images/dessert.svg" alt="Rasmalai dessert" />
+            </div>
+            <div class="menu-info">
+              <h3>Rasmalai <span class="price">$10</span></h3>
+              <p>Delicate cheese patties in sweetened, saffron-flavored milk with almonds.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Foodie.</a>
+        <p>Premium dining for the modern palate.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>123 Culinary Ave, Food City</p>
+        <p>hello@foodie.com</p>
+        <p>(555) 123-4567</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Foodie. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
